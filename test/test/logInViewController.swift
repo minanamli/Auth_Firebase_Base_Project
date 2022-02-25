@@ -10,9 +10,6 @@ import FirebaseAuth
 import GoogleSignIn
 import FirebaseAuth
 import Firebase
-import FacebookCore
-import FacebookLogin
-import FacebookShare
 import CryptoKit
 
 

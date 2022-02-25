@@ -7,7 +7,6 @@
 
 import UIKit
 import GoogleSignIn
-import FacebookCore
 
 //f
 
@@ -22,12 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        ApplicationDelegate.shared.application(
-            UIApplication.shared,
-            open: url,
-            sourceApplication: nil,
-            annotation: [UIApplication.OpenURLOptionsKey.annotation]
-        )
+        
     }
     
     
