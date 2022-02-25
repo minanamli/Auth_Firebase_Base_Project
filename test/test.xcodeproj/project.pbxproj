@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA3B60B627C7C43100759330 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B60B527C7C43100759330 /* userViewController.swift */; };
 		BA48FD1727BCE13F008D029F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48FD1627BCE13F008D029F /* AppDelegate.swift */; };
 		BA48FD1927BCE13F008D029F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48FD1827BCE13F008D029F /* SceneDelegate.swift */; };
 		BA48FD1B27BCE13F008D029F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48FD1A27BCE13F008D029F /* SignUpViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA3B60B527C7C43100759330 /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		BA48FD1327BCE13F008D029F /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA48FD1627BCE13F008D029F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA48FD1827BCE13F008D029F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				BA5EB83A27BF7A0300435E92 /* FirstViewController.swift */,
 				BA5EB83C27BF7AF900435E92 /* logInViewController.swift */,
 				BA5EB84527C3C8D400435E92 /* AppleLoginViewController.swift */,
+				BA3B60B527C7C43100759330 /* userViewController.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				BA48FD1B27BCE13F008D029F /* SignUpViewController.swift in Sources */,
 				BA5EB84627C3C8D400435E92 /* AppleLoginViewController.swift in Sources */,
+				BA3B60B627C7C43100759330 /* userViewController.swift in Sources */,
 				BA48FD1727BCE13F008D029F /* AppDelegate.swift in Sources */,
 				BA48FD1927BCE13F008D029F /* SceneDelegate.swift in Sources */,
 				BA5EB83B27BF7A0300435E92 /* FirstViewController.swift in Sources */,

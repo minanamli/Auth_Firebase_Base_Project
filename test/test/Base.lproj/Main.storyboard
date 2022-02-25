@@ -12,7 +12,7 @@
         <scene sceneID="1YT-1h-pzB">
             <objects>
                 <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gHr-qj-1IV" customClass="FirstViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1pe-nb-2JH">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="firstSB" id="1pe-nb-2JH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -55,7 +55,6 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Use Your Google Account"/>
                                 <connections>
                                     <action selector="signupPageClicked:" destination="gHr-qj-1IV" eventType="touchUpInside" id="Mnb-fO-SM3"/>
-                                    <segue destination="jir-HS-sgy" kind="show" id="DhS-CQ-vWX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,7 +80,8 @@
                     <connections>
                         <outlet property="welcomeLabel" destination="Urk-Gl-36n" id="ZdI-Dc-9Ck"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="q0B-7h-3tg"/>
-                        <segue destination="jir-HS-sgy" kind="show" id="sQw-Lr-l5R"/>
+                        <segue destination="jir-HS-sgy" kind="show" identifier="seguewithCheck" id="sQw-Lr-l5R"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="otc-og-PFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sH-2u-xLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -92,7 +92,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="SignUpSB" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="signUpSB" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -179,13 +179,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413.04347826086962" y="61.607142857142854"/>
+            <point key="canvasLocation" x="394" y="62"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="RcT-Hu-vcL">
             <objects>
                 <viewController storyboardIdentifier="logInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jir-HS-sgy" customClass="logInViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PhJ-Il-cWn">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="loginSB" id="PhJ-Il-cWn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -227,7 +227,6 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Log in With Google Account"/>
                                 <connections>
                                     <action selector="signInWithGoogle:" destination="jir-HS-sgy" eventType="touchUpInside" id="wVg-6F-LTs"/>
-                                    <segue destination="XHJ-60-TIE" kind="show" id="XHt-gy-uZ5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -262,13 +261,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbo-6A-aXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137.68115942029" y="61.607142857142854"/>
+            <point key="canvasLocation" x="1320" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--User View Controller-->
         <scene sceneID="rEJ-OL-qbx">
             <objects>
-                <viewController id="XHJ-60-TIE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UD5-TY-eDe">
+                <viewController storyboardIdentifier="another" id="XHJ-60-TIE" customClass="userViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="userSB" id="UD5-TY-eDe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -288,10 +287,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m5K-5Z-L6S"/>
+                    <connections>
+                        <outlet property="helloLabel" destination="dCA-3W-DyW" id="sP3-96-2Ss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFf-Jy-gHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.072463768116" y="61.607142857142854"/>
+            <point key="canvasLocation" x="2133" y="72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0XT-G2-aWE">
@@ -313,9 +315,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TMD-WI-vC3"/>
+        <segue reference="39F-0m-fNX"/>
         <segue reference="sQw-Lr-l5R"/>
-        <segue reference="q0B-7h-3tg"/>
+        <segue reference="Dvm-7R-ETZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
