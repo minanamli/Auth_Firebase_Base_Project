@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2DCBB727D0E67F00EB7765 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA2DCBB627D0E67F00EB7765 /* SnapKit */; };
 		BA3B60B627C7C43100759330 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B60B527C7C43100759330 /* userViewController.swift */; };
+		BA47083A27CDF5C40033D8DB /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = BA47083927CDF5C40033D8DB /* FacebookBasics */; };
+		BA47083C27CDF5C40033D8DB /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = BA47083B27CDF5C40033D8DB /* FacebookCore */; };
+		BA47083E27CDF5C40033D8DB /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = BA47083D27CDF5C40033D8DB /* FacebookLogin */; };
+		BA47084027CDF5C40033D8DB /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = BA47083F27CDF5C40033D8DB /* FacebookShare */; };
 		BA48FD1727BCE13F008D029F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48FD1627BCE13F008D029F /* AppDelegate.swift */; };
 		BA48FD1927BCE13F008D029F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48FD1827BCE13F008D029F /* SceneDelegate.swift */; };
 		BA48FD1B27BCE13F008D029F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48FD1A27BCE13F008D029F /* SignUpViewController.swift */; };
@@ -53,10 +58,15 @@
 				BAC3BF4227C64966004D38EA /* FirebaseDatabaseSwift-Beta in Frameworks */,
 				BA5EB84927C611B100435E92 /* Algorithms in Frameworks */,
 				BAC3BF4627C64966004D38EA /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				BA2DCBB727D0E67F00EB7765 /* SnapKit in Frameworks */,
+				BA47084027CDF5C40033D8DB /* FacebookShare in Frameworks */,
 				BAC3BF3E27C64966004D38EA /* FirebaseAuth in Frameworks */,
+				BA47083C27CDF5C40033D8DB /* FacebookCore in Frameworks */,
 				BAC3BF4027C64966004D38EA /* FirebaseDatabase in Frameworks */,
 				BAC3BF4A27C64966004D38EA /* FirebaseStorageSwift-Beta in Frameworks */,
 				BAC3BF4827C64966004D38EA /* FirebaseStorage in Frameworks */,
+				BA47083E27CDF5C40033D8DB /* FacebookLogin in Frameworks */,
+				BA47083A27CDF5C40033D8DB /* FacebookBasics in Frameworks */,
 				BA5EB84027BF94A500435E92 /* GoogleSignIn in Frameworks */,
 				BAC3BF4427C64966004D38EA /* FirebaseFirestore in Frameworks */,
 			);
@@ -134,6 +144,11 @@
 				BAC3BF4527C64966004D38EA /* FirebaseFirestoreSwift-Beta */,
 				BAC3BF4727C64966004D38EA /* FirebaseStorage */,
 				BAC3BF4927C64966004D38EA /* FirebaseStorageSwift-Beta */,
+				BA47083927CDF5C40033D8DB /* FacebookBasics */,
+				BA47083B27CDF5C40033D8DB /* FacebookCore */,
+				BA47083D27CDF5C40033D8DB /* FacebookLogin */,
+				BA47083F27CDF5C40033D8DB /* FacebookShare */,
+				BA2DCBB627D0E67F00EB7765 /* SnapKit */,
 			);
 			productName = test;
 			productReference = BA48FD1327BCE13F008D029F /* test.app */;
@@ -167,6 +182,8 @@
 				BA5EB83E27BF94A500435E92 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				BA5EB84727C611B100435E92 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				BAC3BF3C27C64966004D38EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BA47083827CDF5C40033D8DB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				BA2DCBB527D0E67F00EB7765 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BA48FD1427BCE13F008D029F /* Products */;
 			projectDirPath = "";
@@ -424,6 +441,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BA2DCBB527D0E67F00EB7765 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BA47083827CDF5C40033D8DB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
 		BA5EB83E27BF94A500435E92 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -451,6 +484,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BA2DCBB627D0E67F00EB7765 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2DCBB527D0E67F00EB7765 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		BA47083927CDF5C40033D8DB /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA47083827CDF5C40033D8DB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		BA47083B27CDF5C40033D8DB /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA47083827CDF5C40033D8DB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		BA47083D27CDF5C40033D8DB /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA47083827CDF5C40033D8DB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		BA47083F27CDF5C40033D8DB /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA47083827CDF5C40033D8DB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
 		BA5EB83F27BF94A500435E92 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BA5EB83E27BF94A500435E92 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;

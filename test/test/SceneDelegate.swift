@@ -7,10 +7,8 @@
 
 import UIKit
 import GoogleSignIn
+import FacebookCore
 
-//f
-
-//f
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,10 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let url = URLContexts.first?.url else {
             return
         }
-
-        
+        ApplicationDelegate.shared.application(UIApplication.shared,open: url,sourceApplication: nil, annotation: [UIApplication.OpenURLOptionsKey.annotation])
     }
-    
+
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

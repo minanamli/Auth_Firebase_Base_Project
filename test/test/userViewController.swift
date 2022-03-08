@@ -6,26 +6,39 @@
 //
 
 import UIKit
+import FacebookLogin
+import FBSDKCoreKit
+import FacebookCore
+import FirebaseAuth
+import Firebase
+import FacebookLogin
 
-class userViewController: UIViewController {
+
+class userViewController: UIViewController, LoginButtonDelegate {
+    
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        self.performSegue(withIdentifier: "deneme12", sender: nil)
+         
+    }
+    
 
     @IBOutlet weak var helloLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let token = AccessToken.current,
+               !token.isExpired {
+            let loginButton = FBLoginButton()
+            loginButton.delegate = self
+            loginButton.center = view.center
+            view.addSubview(loginButton)
+           }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

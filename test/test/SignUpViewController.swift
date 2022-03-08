@@ -61,15 +61,11 @@ class SignUpViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)}
  
     public func register(name: String, email: String, password: String){
-        
-        
-        
+  
         Auth.auth().createUser(withEmail: email, password: password) { result, err in
             if let err = err {
                 self.makeAlert(titleInput: "Error!", messageInput: err.localizedDescription)
             }else{
-                //TODO:  databse
-                
 //               result?.user.uid
 //               result?.user.email
 //               result?.user.displayName
